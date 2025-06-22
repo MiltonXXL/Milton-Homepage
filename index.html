@@ -1,19 +1,19 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <title>Min första GitHub-sida</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Min första GitHub-sida</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Hem</a></li>
-            <li><a href="about.html">Om</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-        </ul>
-    </nav>
-    <h1>Hej världen!</h1>
-    <p>Detta är min första sida med GitHub Pages.</p>
+
+  <h1>Hej världen!</h1>
+  <p>Detta är min första sida med GitHub Pages.</p>
 </body>
+<div id="header"></div>
+<script>
+  fetch("header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+</script>
 </html>
