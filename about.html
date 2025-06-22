@@ -6,14 +6,15 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Om mig</h1>
-  <p>Här skriver du om dig själv eller projektet</p>
-  <a href="index.html">Tillbaka till startsidan</a>
-</body>
-<div id="header"></div>
-<script>
-  fetch("header.html")
-    .then(res => res.text())
-    .then(data => document.getElementById("header").innerHTML = data);
-</script>
-</html>
+  <div id="header"></div>
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
+  <main>
+    <h1>Om mig</h1>
+    <p>Här skriver du om dig själv eller projektet</p>
+    <a href="index.html">Tillbaka till startsidan</a>
+  </main>
+</body></html>

@@ -6,7 +6,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <div id="header"></div>
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
   <main>
     <h1>Kontakta mig</h1>
     <p>Fyll i formuläret nedan om du vill skicka ett meddelande:</p>
@@ -25,11 +30,4 @@
     </form>
   </main>
 
-</body>
-<div id="header"></div>
-<script>
-  fetch("header.html")
-    .then(res => res.text())
-    .then(data => document.getElementById("header").innerHTML = data);
-</script>
-</html>
+</body></html>
