@@ -52,3 +52,9 @@ nav a:hover {
     background-color: #555;
 }
 
+#messagebox {
+    width: 100%;
+    height: 300px;
+    resize: vertical;
+}
+
