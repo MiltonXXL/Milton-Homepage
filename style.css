@@ -24,7 +24,8 @@ main {
 }
 
 h1 {
-    color: darkblue;
+  margin-top: 0 !important;
+  color: darkblue;
 }
 nav ul {
   justify-content: center;
