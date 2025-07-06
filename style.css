@@ -56,3 +56,49 @@ nav a:hover {
     width: 600px;
 }
 
+.timeline {
+  position: relative;
+  padding: 1rem 0;
+}
+
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #dee2e6;
+    transform: translateX(-50%);
+  }
+
+.timeline-item {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 5px;
+  width: 45%;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  float: right;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  float: left;
+}
+
+
